@@ -146,6 +146,10 @@ h1 {
     overflow: hidden;
     transition: all 0.5s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
 }
 
 .projetos-card:hover {
@@ -156,8 +160,9 @@ h1 {
 .projetos-imagem {
     height: 200px;
     width: 100%;
-    object-fit: cover;
-
+    object-fit: contain;
+    background: #0f172a;
+    padding: 10px;
 }
 
 .caixa-texto-projeto {
@@ -165,7 +170,7 @@ h1 {
 }
 
 .paragrafo-projetos {
-    color: rgba(226, 232, 240, 0.8a);
+    color: rgba(226, 232, 240, 0.8);
     line-height: 1.25rem;
 }
 
